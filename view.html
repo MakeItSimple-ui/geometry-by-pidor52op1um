@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Чертёж</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='9' fill='%236f4ef2'/><circle cx='16' cy='16' r='8' fill='none' stroke='white' stroke-width='2'/><circle cx='16' cy='8' r='2.4' fill='white'/></svg>">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="viewer">
+<header class="vtop">
+  <a class="btn icon" id="back" href="./" title="К списку">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 5 8 12l7 7"/></svg>
+  </a>
+  <h1 id="title">…</h1>
+  <span class="chip hide-sm" id="folder" hidden></span>
+  <span class="grow" style="flex:1"></span>
+  <button class="btn icon" id="prev" title="Предыдущий (←)">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 5 8 12l7 7"/></svg>
+  </button>
+  <button class="btn icon" id="next" title="Следующий (→)">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 5 7 7-7 7"/></svg>
+  </button>
+  <button class="btn hide-sm" id="algebra" title="Показать/скрыть панель алгебры">Алгебра</button>
+  <button class="btn hide-sm" id="copy">Ссылка</button>
+  <a class="btn hide-sm" id="dl" href="#">.ggb</a>
+  <button class="btn primary icon" id="fs" title="На весь экран">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+  </button>
+</header>
+
+<div class="stage" id="stage">
+  <div class="loading" id="loading">загружаю чертёж…</div>
+  <div id="ggb"></div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="https://www.geogebra.org/apps/deployggb.js"></script>
+<script src="assets/viewer.js"></script>
+</body>
+</html>
